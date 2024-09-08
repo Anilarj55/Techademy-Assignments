@@ -46,5 +46,9 @@ public class TaskManager {
         System.out.println("After Task removal");
         manager.removeTask(0);
         manager.displayTasks();
+        
+        System.out.println("Added more task");
+        manager.addTask(new Task("Print forms", new Date()));
+        manager.displayTasks();
     }
 }
